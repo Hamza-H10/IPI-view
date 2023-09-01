@@ -37,6 +37,7 @@ Module GlobalCode
               [DEPTH]    DOUBLE(10,4) NOT NULL,
               [BASEFILE] VARCHAR(256))"
 
+
         ' Execute the SQL command
         sqlite_cmd.ExecuteNonQuery()
     End Sub
@@ -67,6 +68,7 @@ Module GlobalCode
         End Try
         Return True
     End Function
+    'test
 
     ' Update an existing Borehole record in the database
     Function UpdateBorehole(ByRef bh As BoreHole) As Boolean
